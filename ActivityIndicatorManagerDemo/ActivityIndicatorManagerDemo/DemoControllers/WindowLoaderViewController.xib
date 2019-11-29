@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WindowLoaderViewController" customModule="ActivityIndicatorManagerDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nRR-vG-rsT">
+                    <rect key="frame" x="157" y="400.5" width="100" height="105"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iin-0v-Jse">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                            <state key="normal" title="Slow Load"/>
+                            <connections>
+                                <action selector="didTapOnSlowLoadButton:" destination="-1" eventType="touchUpInside" id="GHV-iN-bAf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq3-hZ-eyb">
+                            <rect key="frame" x="0.0" y="55" width="100" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="nQ1-55-Plo"/>
+                                <constraint firstAttribute="height" constant="50" id="viF-rv-qzx"/>
+                            </constraints>
+                            <state key="normal" title="Fast Load"/>
+                            <connections>
+                                <action selector="didTapOnFastLoadButton:" destination="-1" eventType="touchUpInside" id="qpK-xj-l4A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="iin-0v-Jse" firstAttribute="height" secondItem="Jq3-hZ-eyb" secondAttribute="height" multiplier="0.6" id="glT-iU-Du7"/>
+                        <constraint firstItem="iin-0v-Jse" firstAttribute="width" secondItem="Jq3-hZ-eyb" secondAttribute="width" id="rqB-5J-Elt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nRR-vG-rsT" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="bnf-Ql-zNt"/>
+                <constraint firstItem="nRR-vG-rsT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="q6T-bl-pHg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>

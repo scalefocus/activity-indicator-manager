@@ -1,0 +1,16 @@
+PODS:
+  - ActivityIndicatorManager (0.0.1)
+
+DEPENDENCIES:
+  - ActivityIndicatorManager (from `../ActivityIndicatorManager`)
+
+EXTERNAL SOURCES:
+  ActivityIndicatorManager:
+    :path: "../ActivityIndicatorManager"
+
+SPEC CHECKSUMS:
+  ActivityIndicatorManager: b2e79c6aae1d4aae083bb5a28235e2f77f1a1a4d
+
+PODFILE CHECKSUM: 9b63ad59724b506950da4aab2768cd584cd03f58
+
+COCOAPODS: 1.8.4
