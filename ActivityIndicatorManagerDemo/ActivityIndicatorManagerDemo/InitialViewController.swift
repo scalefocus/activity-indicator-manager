@@ -21,7 +21,8 @@ class InitialViewController: UIViewController {
     let options: [Option] = [
         ("Whole window loader", WindowLoaderViewController.self),
         ("Specific view loader", ViewLoaderViewController.self),
-        ("Window Loader with configured layout", LoaderConfigurationViewController.self)
+        ("Window Loader with configured layout", LoaderConfigurationViewController.self),
+        ("Window Loader in custom window", CustomWindowLoaderViewController.self)
     ]
     
 }
@@ -47,6 +48,7 @@ extension InitialViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = options[indexPath.row].controller.init()
+        vc.title = options[indexPath.row].title
         navigationController?.pushViewController(vc, animated: true)
     }
     

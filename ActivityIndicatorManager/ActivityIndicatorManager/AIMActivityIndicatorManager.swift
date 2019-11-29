@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// Single class handling logic with activity indicator management in `UIView`s and `UIWindow`s.
 open class AIMActivityIndicatorManager {
     
     // MARK: - Setup

@@ -13,6 +13,8 @@
 		1139442723858469008AE185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1139442623858469008AE185 /* Assets.xcassets */; };
 		1139442A23858469008AE185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1139442823858469008AE185 /* LaunchScreen.storyboard */; };
 		1139443523858469008AE185 /* ActivityIndicatorManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139443423858469008AE185 /* ActivityIndicatorManagerDemoTests.swift */; };
+		11AD124F239153F400212A02 /* CustomWindowLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD124D239153F400212A02 /* CustomWindowLoaderViewController.swift */; };
+		11AD1250239153F400212A02 /* CustomWindowLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AD124E239153F400212A02 /* CustomWindowLoaderViewController.xib */; };
 		11D3D272238C1540002CD3BA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3D270238C1540002CD3BA /* InitialViewController.swift */; };
 		11D3D277238C17C5002CD3BA /* WindowLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3D275238C17C5002CD3BA /* WindowLoaderViewController.swift */; };
 		11D3D278238C17C5002CD3BA /* WindowLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D3D276238C17C5002CD3BA /* WindowLoaderViewController.xib */; };
@@ -44,6 +46,8 @@
 		1139443023858469008AE185 /* ActivityIndicatorManagerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityIndicatorManagerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1139443423858469008AE185 /* ActivityIndicatorManagerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManagerDemoTests.swift; sourceTree = "<group>"; };
 		1139443623858469008AE185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AD124D239153F400212A02 /* CustomWindowLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowLoaderViewController.swift; sourceTree = "<group>"; };
+		11AD124E239153F400212A02 /* CustomWindowLoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWindowLoaderViewController.xib; sourceTree = "<group>"; };
 		11D3D270238C1540002CD3BA /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		11D3D275238C17C5002CD3BA /* WindowLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowLoaderViewController.swift; sourceTree = "<group>"; };
 		11D3D276238C17C5002CD3BA /* WindowLoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowLoaderViewController.xib; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				11D3D27A238EA187002CD3BA /* ViewLoaderViewController.xib */,
 				11D3D27D238EA4ED002CD3BA /* LoaderConfigurationViewController.swift */,
 				11D3D27E238EA4ED002CD3BA /* LoaderConfigurationViewController.xib */,
+				11AD124D239153F400212A02 /* CustomWindowLoaderViewController.swift */,
+				11AD124E239153F400212A02 /* CustomWindowLoaderViewController.xib */,
 			);
 			path = DemoControllers;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				11D3D278238C17C5002CD3BA /* WindowLoaderViewController.xib in Resources */,
 				1139442723858469008AE185 /* Assets.xcassets in Resources */,
 				11D3D27C238EA187002CD3BA /* ViewLoaderViewController.xib in Resources */,
+				11AD1250239153F400212A02 /* CustomWindowLoaderViewController.xib in Resources */,
 				11D3D280238EA4ED002CD3BA /* LoaderConfigurationViewController.xib in Resources */,
 				1139442523858468008AE185 /* Main.storyboard in Resources */,
 			);
@@ -298,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D3D27F238EA4ED002CD3BA /* LoaderConfigurationViewController.swift in Sources */,
+				11AD124F239153F400212A02 /* CustomWindowLoaderViewController.swift in Sources */,
 				1139441E23858468008AE185 /* AppDelegate.swift in Sources */,
 				1139442023858468008AE185 /* SceneDelegate.swift in Sources */,
 				11D3D277238C17C5002CD3BA /* WindowLoaderViewController.swift in Sources */,
