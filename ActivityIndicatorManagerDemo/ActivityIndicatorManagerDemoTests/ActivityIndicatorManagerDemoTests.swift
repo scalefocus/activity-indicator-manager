@@ -3,7 +3,7 @@
 //  ActivityIndicatorManagerDemoTests
 //
 //  Created by Dimitar V. Petrov on 20.11.19.
-//  Copyright © 2019 Dimitar V. Petrov. All rights reserved.
+//  Copyright © 2019 Upnetix. All rights reserved.
 //
 
 import XCTest

@@ -3,7 +3,7 @@
 //  ActivityIndicatorManagerDemo
 //
 //  Created by Dimitar V. Petrov on 27.11.19.
-//  Copyright © 2019 Dimitar V. Petrov. All rights reserved.
+//  Copyright © 2019 Upnetix. All rights reserved.
 //
 
 import UIKit
