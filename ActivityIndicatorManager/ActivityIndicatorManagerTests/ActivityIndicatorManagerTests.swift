@@ -1,15 +1,15 @@
 //
-//  ActivityIndicatorManagerDemoTests.swift
-//  ActivityIndicatorManagerDemoTests
+//  ActivityIndicatorManagerTests.swift
+//  ActivityIndicatorManagerTests
 //
 //  Created by Dimitar V. Petrov on 20.11.19.
 //  Copyright © 2019 Upnetix. All rights reserved.
 //
 
 import XCTest
-@testable import ActivityIndicatorManagerDemo
+@testable import ActivityIndicatorManager
 
-class ActivityIndicatorManagerDemoTests: XCTestCase {
+class ActivityIndicatorManagerTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

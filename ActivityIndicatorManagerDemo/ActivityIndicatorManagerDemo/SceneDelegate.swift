@@ -2,12 +2,13 @@
 //  SceneDelegate.swift
 //  ActivityIndicatorManagerDemo
 //
-//  Created by Dimitar V. Petrov on 29.11.19.
+//  Created by Dimitar V. Petrov on 20.11.19.
 //  Copyright © 2019 Upnetix. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
