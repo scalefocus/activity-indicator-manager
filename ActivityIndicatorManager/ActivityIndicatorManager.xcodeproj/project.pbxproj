@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1139445323858AEE008AE185 /* ActivityIndicatorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */; };
 		1139445A23858AEE008AE185 /* ActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1139444C23858AEE008AE185 /* ActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1139446723859332008AE185 /* AIMActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139446623859332008AE185 /* AIMActivityIndicatorManager.swift */; };
 		117316D12386810C008B62E4 /* UIView+ExpandInSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117316D02386810C008B62E4 /* UIView+ExpandInSuperview.swift */; };
@@ -20,16 +19,6 @@
 		11AD121C2391278700212A02 /* UIWindow+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD121B2391278700212A02 /* UIWindow+KeyWindow.swift */; };
 		11AD121E2391298C00212A02 /* UIActivityIndicatorViewStyle+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD121D2391298C00212A02 /* UIActivityIndicatorViewStyle+Default.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1139445423858AEE008AE185 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1139444023858AEE008AE185 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1139444823858AEE008AE185;
-			remoteInfo = ActivityIndicatorManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityIndicatorManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,14 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1139444F23858AEE008AE185 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1139445323858AEE008AE185 /* ActivityIndicatorManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,13 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1139445023858AEE008AE185 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,22 +200,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1139444E23858AEE008AE185 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1139445523858AEE008AE185 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1139444823858AEE008AE185 /* ActivityIndicatorManager */;
-			targetProxy = 1139445423858AEE008AE185 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1139445B23858AEE008AE185 /* Debug */ = {
@@ -382,7 +341,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.ActivityIndicatorManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -410,7 +369,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.ActivityIndicatorManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
