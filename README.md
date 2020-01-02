@@ -34,7 +34,7 @@ Table of contents
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `ActivityIndicatorManager` by adding it to your `Podfile`:
 
-``` ruby
+```ruby
 platform :ios, '11.0'
 use_frameworks!
 pod 'ActivityIndicatorManager'
