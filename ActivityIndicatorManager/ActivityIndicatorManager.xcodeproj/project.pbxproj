@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09A2BD71697697F5FA9D8479 /* Pods_ActivityIndicatorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C081B85CE66D046C3D65677 /* Pods_ActivityIndicatorManager.framework */; };
 		1139445323858AEE008AE185 /* ActivityIndicatorManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */; };
-		1139445823858AEE008AE185 /* ActivityIndicatorManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139445723858AEE008AE185 /* ActivityIndicatorManagerTests.swift */; };
 		1139445A23858AEE008AE185 /* ActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1139444C23858AEE008AE185 /* ActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1139446723859332008AE185 /* AIMActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139446623859332008AE185 /* AIMActivityIndicatorManager.swift */; };
 		117316D12386810C008B62E4 /* UIView+ExpandInSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117316D02386810C008B62E4 /* UIView+ExpandInSuperview.swift */; };
@@ -21,7 +19,6 @@
 		117316E02387F44A008B62E4 /* AIMActivityIndicatorManager+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117316DF2387F44A008B62E4 /* AIMActivityIndicatorManager+View.swift */; };
 		11AD121C2391278700212A02 /* UIWindow+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD121B2391278700212A02 /* UIWindow+KeyWindow.swift */; };
 		11AD121E2391298C00212A02 /* UIActivityIndicatorViewStyle+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD121D2391298C00212A02 /* UIActivityIndicatorViewStyle+Default.swift */; };
-		D64E58E01C0A923B744E2633 /* Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988BBB097C646099595A92F2 /* Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +35,6 @@
 		1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityIndicatorManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1139444C23858AEE008AE185 /* ActivityIndicatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorManager.h; sourceTree = "<group>"; };
 		1139444D23858AEE008AE185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1139445223858AEE008AE185 /* ActivityIndicatorManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityIndicatorManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1139445723858AEE008AE185 /* ActivityIndicatorManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorManagerTests.swift; sourceTree = "<group>"; };
-		1139445923858AEE008AE185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1139446623859332008AE185 /* AIMActivityIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMActivityIndicatorManager.swift; sourceTree = "<group>"; };
 		117316D02386810C008B62E4 /* UIView+ExpandInSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ExpandInSuperview.swift"; sourceTree = "<group>"; };
 		117316D223868BFD008B62E4 /* AIMConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMConstants.swift; sourceTree = "<group>"; };
@@ -51,12 +45,6 @@
 		117316DF2387F44A008B62E4 /* AIMActivityIndicatorManager+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AIMActivityIndicatorManager+View.swift"; sourceTree = "<group>"; };
 		11AD121B2391278700212A02 /* UIWindow+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+KeyWindow.swift"; sourceTree = "<group>"; };
 		11AD121D2391298C00212A02 /* UIActivityIndicatorViewStyle+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorViewStyle+Default.swift"; sourceTree = "<group>"; };
-		2E5F360E7F8BAEA735514BB5 /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.release.xcconfig"; path = "Target Support Files/Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests/Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.release.xcconfig"; sourceTree = "<group>"; };
-		6C081B85CE66D046C3D65677 /* Pods_ActivityIndicatorManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityIndicatorManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		988BBB097C646099595A92F2 /* Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6DC8E98E031F5F91D1DA6DB /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests/Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F03425A1D8370D2BA4CA0A3C /* Pods-ActivityIndicatorManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityIndicatorManager.debug.xcconfig"; path = "Target Support Files/Pods-ActivityIndicatorManager/Pods-ActivityIndicatorManager.debug.xcconfig"; sourceTree = "<group>"; };
-		FA0F7E18C4680CF52C2547C1 /* Pods-ActivityIndicatorManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivityIndicatorManager.release.xcconfig"; path = "Target Support Files/Pods-ActivityIndicatorManager/Pods-ActivityIndicatorManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09A2BD71697697F5FA9D8479 /* Pods_ActivityIndicatorManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1139445323858AEE008AE185 /* ActivityIndicatorManager.framework in Frameworks */,
-				D64E58E01C0A923B744E2633 /* Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,10 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				1139444B23858AEE008AE185 /* ActivityIndicatorManager */,
-				1139445623858AEE008AE185 /* ActivityIndicatorManagerTests */,
 				1139444A23858AEE008AE185 /* Products */,
-				CA5EE087BAC74AF6E0020165 /* Pods */,
-				68BA710154C481D158F5EABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */,
-				1139445223858AEE008AE185 /* ActivityIndicatorManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,15 +95,6 @@
 				117316D42387F2DA008B62E4 /* AIMMinimumLoadingTimeType.swift */,
 			);
 			path = ActivityIndicatorManager;
-			sourceTree = "<group>";
-		};
-		1139445623858AEE008AE185 /* ActivityIndicatorManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				1139445723858AEE008AE185 /* ActivityIndicatorManagerTests.swift */,
-				1139445923858AEE008AE185 /* Info.plist */,
-			);
-			path = ActivityIndicatorManagerTests;
 			sourceTree = "<group>";
 		};
 		117316D62387F387008B62E4 /* WindowActivityIndicatorManager */ = {
@@ -152,26 +125,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		68BA710154C481D158F5EABD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6C081B85CE66D046C3D65677 /* Pods_ActivityIndicatorManager.framework */,
-				988BBB097C646099595A92F2 /* Pods_ActivityIndicatorManager_ActivityIndicatorManagerTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA5EE087BAC74AF6E0020165 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F03425A1D8370D2BA4CA0A3C /* Pods-ActivityIndicatorManager.debug.xcconfig */,
-				FA0F7E18C4680CF52C2547C1 /* Pods-ActivityIndicatorManager.release.xcconfig */,
-				B6DC8E98E031F5F91D1DA6DB /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.debug.xcconfig */,
-				2E5F360E7F8BAEA735514BB5 /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,7 +143,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1139445D23858AEE008AE185 /* Build configuration list for PBXNativeTarget "ActivityIndicatorManager" */;
 			buildPhases = (
-				073CB2903A7212C8D776E088 /* [CP] Check Pods Manifest.lock */,
 				1139444423858AEE008AE185 /* Headers */,
 				1139444523858AEE008AE185 /* Sources */,
 				1139444623858AEE008AE185 /* Frameworks */,
@@ -205,25 +157,6 @@
 			productReference = 1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1139445123858AEE008AE185 /* ActivityIndicatorManagerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1139446023858AEE008AE185 /* Build configuration list for PBXNativeTarget "ActivityIndicatorManagerTests" */;
-			buildPhases = (
-				CA9F10152D827873B59D4E9B /* [CP] Check Pods Manifest.lock */,
-				1139444E23858AEE008AE185 /* Sources */,
-				1139444F23858AEE008AE185 /* Frameworks */,
-				1139445023858AEE008AE185 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1139445523858AEE008AE185 /* PBXTargetDependency */,
-			);
-			name = ActivityIndicatorManagerTests;
-			productName = ActivityIndicatorManagerTests;
-			productReference = 1139445223858AEE008AE185 /* ActivityIndicatorManagerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,9 +170,6 @@
 					1139444823858AEE008AE185 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
-					};
-					1139445123858AEE008AE185 = {
-						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
@@ -257,7 +187,6 @@
 			projectRoot = "";
 			targets = (
 				1139444823858AEE008AE185 /* ActivityIndicatorManager */,
-				1139445123858AEE008AE185 /* ActivityIndicatorManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,53 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		073CB2903A7212C8D776E088 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ActivityIndicatorManager-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA9F10152D827873B59D4E9B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1139444523858AEE008AE185 /* Sources */ = {
@@ -348,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1139445823858AEE008AE185 /* ActivityIndicatorManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +366,6 @@
 		};
 		1139445E23858AEE008AE185 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F03425A1D8370D2BA4CA0A3C /* Pods-ActivityIndicatorManager.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -514,7 +394,6 @@
 		};
 		1139445F23858AEE008AE185 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA0F7E18C4680CF52C2547C1 /* Pods-ActivityIndicatorManager.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,46 +419,6 @@
 			};
 			name = Release;
 		};
-		1139446123858AEE008AE185 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6DC8E98E031F5F91D1DA6DB /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UWBDU93DZY;
-				INFOPLIST_FILE = ActivityIndicatorManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.ActivityIndicatorManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1139446223858AEE008AE185 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E5F360E7F8BAEA735514BB5 /* Pods-ActivityIndicatorManager-ActivityIndicatorManagerTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UWBDU93DZY;
-				INFOPLIST_FILE = ActivityIndicatorManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnetix.ActivityIndicatorManagerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,15 +436,6 @@
 			buildConfigurations = (
 				1139445E23858AEE008AE185 /* Debug */,
 				1139445F23858AEE008AE185 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1139446023858AEE008AE185 /* Build configuration list for PBXNativeTarget "ActivityIndicatorManagerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1139446123858AEE008AE185 /* Debug */,
-				1139446223858AEE008AE185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
