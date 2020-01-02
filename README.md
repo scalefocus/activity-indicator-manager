@@ -34,7 +34,7 @@ Table of contents
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `ActivityIndicatorManager` by adding it to your `Podfile`:
 
-```ruby
+``` ruby
 platform :ios, '11.0'
 use_frameworks!
 pod 'ActivityIndicatorManager'
@@ -42,7 +42,7 @@ pod 'ActivityIndicatorManager'
 
 To get the full benefits import `ActivityIndicatorManager` at the start of the source file:
 
-``` swift
+```swift
 import ActivityIndicatorManager
 ```
 
@@ -97,7 +97,7 @@ Dimitar Petrov – dimitar.petrov@scalefocus.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/scalefocus/activity-indicator-manager](https://github.com/scalefocus/activity-indicator-manager)
 
 [swift-image]:https://img.shields.io/badge/swift-5-green.svg
 [swift-url]: https://swift.org/
