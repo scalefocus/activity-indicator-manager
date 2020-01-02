@@ -3,7 +3,7 @@ platform :ios, '11.0'
 target 'ActivityIndicatorManagerDemo' do
   use_frameworks!
 
-  pod 'ActivityIndicatorManager', :path => '../ActivityIndicatorManager'
+  pod 'ActivityIndicatorManager'
 
 end
 

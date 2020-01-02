@@ -1,16 +1,16 @@
 PODS:
-  - ActivityIndicatorManager (0.0.1)
+  - ActivityIndicatorManager (1.0.0)
 
 DEPENDENCIES:
-  - ActivityIndicatorManager (from `../ActivityIndicatorManager`)
+  - ActivityIndicatorManager
 
-EXTERNAL SOURCES:
-  ActivityIndicatorManager:
-    :path: "../ActivityIndicatorManager"
+SPEC REPOS:
+  trunk:
+    - ActivityIndicatorManager
 
 SPEC CHECKSUMS:
-  ActivityIndicatorManager: b2e79c6aae1d4aae083bb5a28235e2f77f1a1a4d
+  ActivityIndicatorManager: 0b83d93a1c3edbb4e5712aafc659d0c4907bec8d
 
-PODFILE CHECKSUM: 9b63ad59724b506950da4aab2768cd584cd03f58
+PODFILE CHECKSUM: 524ce32597e2f3d6e3f1915c7cf39e8136e12132
 
 COCOAPODS: 1.8.4
