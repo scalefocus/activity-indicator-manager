@@ -16,7 +16,9 @@ jobs:
   include:
       - stage: lint
         install: gem install cocoapods -v '~> 1.7.5'
-        script: pod lib lint --project-directory=ActivityIndicatorManager
+        script:
+          - cd ActivityIndicatorManager
+          - pod lib lint --allow-warnings
 
       - stage: test
         script:
