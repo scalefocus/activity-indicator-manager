@@ -17,7 +17,9 @@ jobs:
   include:
       - stage: lint
         install: gem install cocoapods -v '~> 1.7.5'
-        script: pod lib lint
+        script:
+	  - cd ActivityIndicatorManager
+	  - pod lib lint
 
       - stage: test
         script:
