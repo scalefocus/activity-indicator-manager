@@ -103,5 +103,5 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[travis-image]: https://travis-ci.com/scalefocus/activity-indicator-manager.svg?branch=master
+[travis-url]: https://travis-ci.com/scalefocus/activity-indicator-manager
