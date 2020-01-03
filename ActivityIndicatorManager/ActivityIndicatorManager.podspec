@@ -1,15 +1,7 @@
-#
-#  Be sure to run `pod spec lint ActivityIndicatorManager.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |spec|
 
   spec.name         = 'ActivityIndicatorManager'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.2'
   spec.summary      = 'AIM provides convenience methods for starting/stopping activity indicators inside of UIViews/UIWindows.'
 
   spec.description  = <<-DESC
@@ -19,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/scalefocus/activity-indicator-manager"
 
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license      = { :type => 'MIT', :file => '../LICENSE.md' }
 
   spec.author       = { "scalefocus" => "dimitar.petrov@scalefocus.com" }
   
