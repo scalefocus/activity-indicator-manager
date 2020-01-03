@@ -1,7 +1,6 @@
 os: osx
 osx_image: xcode11.3
 language: swift
-podfile: ActivityIndicatorManagerDemo/Podfile
 
 branches:
   only:
@@ -17,9 +16,7 @@ jobs:
   include:
       - stage: lint
         install: gem install cocoapods -v '~> 1.7.5'
-        script:
-	  - cd ActivityIndicatorManager
-	  - pod lib lint
+        script: pod lib lint --project-directory=ActivityIndicatorManager
 
       - stage: test
         script:
