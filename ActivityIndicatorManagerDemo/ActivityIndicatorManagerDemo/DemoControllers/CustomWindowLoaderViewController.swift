@@ -12,7 +12,13 @@ import ActivityIndicatorManager
 class CustomWindowLoaderViewController: UIViewController {
 
     let loadingIndicatorWindow = UIWindow(frame: UIScreen.main.bounds)
-    var currentWindow: UIWindow!
+    var currentWindow: UIWindow! {
+        didSet {
+            if #available(iOS 13.0, *) {
+                loadingIndicatorWindow.windowScene = currentWindow.windowScene
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
