@@ -1,5 +1,5 @@
 PODS:
-  - ActivityIndicatorManager (1.0.0)
+  - ActivityIndicatorManager (1.0.2)
 
 DEPENDENCIES:
   - ActivityIndicatorManager
@@ -9,7 +9,7 @@ SPEC REPOS:
     - ActivityIndicatorManager
 
 SPEC CHECKSUMS:
-  ActivityIndicatorManager: 0b83d93a1c3edbb4e5712aafc659d0c4907bec8d
+  ActivityIndicatorManager: f0c553dd00c6f487028b212e38d634a2dd6448e5
 
 PODFILE CHECKSUM: 524ce32597e2f3d6e3f1915c7cf39e8136e12132
 
