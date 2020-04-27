@@ -13,6 +13,6 @@ stages:
 jobs:
   include:
       - stage: lint
-        install: gem install cocoapods -v '~> 1.7.5'
+        install: gem install cocoapods
         script:
-          - pod lib lint --allow-warnings
+          - pod lib lint
