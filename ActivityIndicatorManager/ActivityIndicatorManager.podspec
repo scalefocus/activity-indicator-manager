@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/scalefocus/activity-indicator-manager"
 
-  spec.license      = { :type => 'MIT', :file => '../LICENSE.md' }
+  spec.license      = { :type => 'MIT', :file => '../LICENSE' }
 
   spec.author       = { "scalefocus" => "dimitar.petrov@scalefocus.com" }
   
