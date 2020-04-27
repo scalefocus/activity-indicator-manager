@@ -15,5 +15,4 @@ jobs:
       - stage: lint
         install: gem install cocoapods -v '~> 1.7.5'
         script:
-          - cd ActivityIndicatorManager
           - pod lib lint --allow-warnings
