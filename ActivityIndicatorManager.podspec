@@ -1,7 +1,7 @@
-Pod::Spec.new do |spec|
+ Pod::Spec.new do |spec|
 
   spec.name         = 'ActivityIndicatorManager'
-  spec.version      = '1.0.3'
+  spec.version      = '1.0.4'
   spec.summary      = 'AIM provides convenience methods for starting/stopping activity indicators inside of UIViews/UIWindows.'
 
   spec.description  = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/scalefocus/activity-indicator-manager"
 
-  spec.license      = { :type => 'MIT', :file => '../LICENSE' }
+  spec.license      = 'MIT'
 
   spec.author       = { "scalefocus" => "dimitar.petrov@scalefocus.com" }
   
@@ -20,6 +20,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/scalefocus/activity-indicator-manager.git", :tag => spec.version.to_s }
   
-  spec.source_files = "ActivityIndicatorManager", "ActivityIndicatorManager/**/*.{h,m,swift}"
+  spec.source_files = "ActivityIndicatorManager/ActivityIndicatorManager/**/*.{h,m,swift}"
 
 end
