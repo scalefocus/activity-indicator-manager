@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = 'ActivityIndicatorManager'
-  spec.version      = '1.0.2'
+  spec.version      = '1.0.3'
   spec.summary      = 'AIM provides convenience methods for starting/stopping activity indicators inside of UIViews/UIWindows.'
 
   spec.description  = <<-DESC
