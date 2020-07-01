@@ -16,20 +16,22 @@ open class AIMActivityIndicatorManager {
     /// Setups the blocking behaviour to be related to specific window.
     /// Application's `keyWindow` will be used if no window is provided.
     /// Also setups the activity indicator layout.
+    /// - Parameters:
     /// - Parameter window: `UIWindow` to be used for activity indicator display.
-    /// - Parameter style: The basic appearance of the activity indicator.
-    /// - Parameter color: The color of the activity indicator.
-    /// - Parameter backgroundColor: The background color of the activity indicator.
-    /// - Parameter minimumLoadingTimeType: The minimum loading time behaviour type - enabled/disabled with minimum loading time interval specified.
+    /// - Parameter indicatorType: The loading indicator type - `custom` or `native`
+    /// - Parameter minimumLoadingTimeType: The minimum loading time behaviour type - enabled/disabled with minimum loading time interval
     open class func setup(withWindow window: UIWindow? = nil,
-                          style: UIActivityIndicatorView.Style = AIMConstants.activityIndicatorStyle,
-                          color: UIColor? = nil,
-                          backgroundColor: UIColor? = AIMConstants.backgroundColor,
+                          indicatorType: AIMActivityIndicatorManagerType,
                           minimumLoadingTimeType: AIMMinimumLoadingTimeType = .enabled(AIMConstants.minimumLoadingTime)) {
         sharedInstance.window = window
-        sharedInstance.style = style
-        sharedInstance.color = color
-        sharedInstance.backgroundColor = backgroundColor
+        switch indicatorType {
+        case .native(let model):
+            sharedInstance.style = model.style
+            sharedInstance.color = model.color
+            sharedInstance.backgroundColor = model.backgroundColor
+        case .custom(let customView):
+            sharedInstance.customActivityIndicator = customView
+        }
         sharedInstance.minimumLoadingTimeType = minimumLoadingTimeType
     }
     
@@ -46,20 +48,20 @@ open class AIMActivityIndicatorManager {
     /// The basic appearance of the activity indicator.
     open var style: UIActivityIndicatorView.Style {
         set {
-            activityIndicator.style = newValue
+            nativeActivityIndicator.style = newValue
         }
         get {
-            return activityIndicator.style
+            return nativeActivityIndicator.style
         }
     }
     
     /// The color of the activity indicator.
     open var color: UIColor! {
         set {
-            activityIndicator.color = newValue
+            nativeActivityIndicator.color = newValue
         }
         get {
-            return activityIndicator.color
+            return nativeActivityIndicator.color
         }
     }
     
@@ -126,12 +128,20 @@ open class AIMActivityIndicatorManager {
         }
     }
     
-    /// The default whole screen blocking UI activity indicator.
-    lazy var activityIndicator: UIActivityIndicatorView = {
+    /// The native whole screen blocking UI activity indicator.
+    lazy var nativeActivityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: AIMConstants.activityIndicatorStyle)
         activityIndicator.backgroundColor = AIMConstants.backgroundColor
         return activityIndicator
     }()
+    
+    /// The custom whole screen blocking UI activity indicator.
+    var customActivityIndicator: AIMActivityIndicatorProtocol?
+    
+    /// Returns the native or custom activity indicator depending on the setup
+    var activityIndicator: AIMActivityIndicatorProtocol {
+        return customActivityIndicator ?? nativeActivityIndicator
+    }
     
     /// Blocks the UI and starts activity indicator, if needed.
     func showIndicator() {
@@ -162,7 +172,7 @@ open class AIMActivityIndicatorManager {
     func hideIndicator() {
         //check if there are no more UI blockers
         guard !isIndicatorShown && isMinimumTimeElapsed else { return }
-
+        
         activityIndicator.stopAnimating()
         activityIndicator.removeFromSuperview()
     }
@@ -171,4 +181,9 @@ open class AIMActivityIndicatorManager {
     public static let sharedInstance = AIMActivityIndicatorManager()
     private init() {}
     
+}
+
+// MARK: - AIMActivityIndicatorProtocol
+extension UIActivityIndicatorView: AIMActivityIndicatorProtocol {
+    //
 }
