@@ -52,13 +52,39 @@ import ActivityIndicatorManager
 
 ## Usage example
 
-#### Setup
+#### Setup with native activity indicator
+
+```swift
+let nativeActivityIndicatorSetup = AIMNativeTypeModel(style: <#T##UIActivityIndicatorView.Style#>,
+                                                      color: <#T##UIColor?#>,
+                                                      backgroundColor: <#T##UIColor?#>)
+
+AIMActivityIndicatorManager.setup(withWindow: <#T##UIWindow?#>,
+                                  indicatorType: .native(model: nativeActivityIndicatorSetup),
+                                  minimumLoadingTimeType: <#T##AIMMinimumLoadingTimeType#>)
+```
+
+#### Setup with custom activity indicator
+
+To setup with custom activity indicator a custom view with all the logic should be provided. Note that your custom view should conform to `AIMActivityIndicatorProtocol`
+
+```swift
+class CustomActivityIndicatorView: UIView, AIMActivityIndicatorProtocol {
+    
+    // MARK: - ActivityIndicatorProtocol
+    func startAnimating() {
+        // start custom animation
+    }
+    
+    func stopAnimating() {
+        // stop custom animation
+    }
+}
+```
 
 ```swift
 AIMActivityIndicatorManager.setup(withWindow: <#T##UIWindow?#>,
-                                  style: <#T##UIActivityIndicatorView.Style#>,
-                                  color: <#T##UIColor?#>,
-                                  backgroundColor: <#T##UIColor?#>,
+                                  indicatorType: .custom(customView: CustomActivityIndicatorView()),
                                   minimumLoadingTimeType: <#T##AIMMinimumLoadingTimeType#>)
 ```
 
