@@ -13,10 +13,10 @@ class LoaderConfigurationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        AIMActivityIndicatorManager.setup(style: UIActivityIndicatorView.Style.whiteLarge,
-                                          color: .purple,
-                                          backgroundColor: UIColor(red: 0.9, green: 0.4, blue: 0.7, alpha: 0.4),
+        let nativeModel = AIMNativeTypeModel(style: .whiteLarge,
+                                             color: .purple,
+                                             backgroundColor: UIColor(red: 0.9, green: 0.4, blue: 0.7, alpha: 0.4))
+        AIMActivityIndicatorManager.setup(indicatorType: .native(model: nativeModel),
                                           minimumLoadingTimeType: .enabled(3))
     }
 

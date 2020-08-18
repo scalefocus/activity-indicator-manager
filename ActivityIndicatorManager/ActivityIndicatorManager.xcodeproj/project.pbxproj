@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027890BD24AC7ABA0065AB63 /* AIMActivityIndicatorManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorManagerType.swift */; };
+		027890BD24AC7ABA0065AB63 /* AIMActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorType.swift */; };
 		027890BF24AC7AED0065AB63 /* AIMActivityIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027890BE24AC7AED0065AB63 /* AIMActivityIndicatorProtocol.swift */; };
 		027890C124AC7B090065AB63 /* AIMNativeTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027890C024AC7B090065AB63 /* AIMNativeTypeModel.swift */; };
 		1139445A23858AEE008AE185 /* ActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1139444C23858AEE008AE185 /* ActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMActivityIndicatorManagerType.swift; sourceTree = "<group>"; };
+		027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMActivityIndicatorType.swift; sourceTree = "<group>"; };
 		027890BE24AC7AED0065AB63 /* AIMActivityIndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMActivityIndicatorProtocol.swift; sourceTree = "<group>"; };
 		027890C024AC7B090065AB63 /* AIMNativeTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIMNativeTypeModel.swift; sourceTree = "<group>"; };
 		1139444923858AEE008AE185 /* ActivityIndicatorManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityIndicatorManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 				1139446623859332008AE185 /* AIMActivityIndicatorManager.swift */,
 				117316D223868BFD008B62E4 /* AIMConstants.swift */,
 				117316D42387F2DA008B62E4 /* AIMMinimumLoadingTimeType.swift */,
-				027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorManagerType.swift */,
+				027890BC24AC7ABA0065AB63 /* AIMActivityIndicatorType.swift */,
 				027890BE24AC7AED0065AB63 /* AIMActivityIndicatorProtocol.swift */,
 				027890C024AC7B090065AB63 /* AIMNativeTypeModel.swift */,
 			);
@@ -202,7 +202,7 @@
 				11AD121C2391278700212A02 /* UIWindow+KeyWindow.swift in Sources */,
 				1139446723859332008AE185 /* AIMActivityIndicatorManager.swift in Sources */,
 				117316E02387F44A008B62E4 /* AIMActivityIndicatorManager+View.swift in Sources */,
-				027890BD24AC7ABA0065AB63 /* AIMActivityIndicatorManagerType.swift in Sources */,
+				027890BD24AC7ABA0065AB63 /* AIMActivityIndicatorType.swift in Sources */,
 				117316D323868BFD008B62E4 /* AIMConstants.swift in Sources */,
 				027890BF24AC7AED0065AB63 /* AIMActivityIndicatorProtocol.swift in Sources */,
 				117316DA2387F3D5008B62E4 /* AIMActivityIndicatorManager+Window.swift in Sources */,

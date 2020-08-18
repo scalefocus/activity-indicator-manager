@@ -22,4 +22,7 @@ public struct AIMConstants {
     /// For below iOS 13`: .whiteLarge`.
     public static var activityIndicatorStyle: UIActivityIndicatorView.Style = .default
     
+    /// The default `AIMActivityIndicatorType` to be used. Native activity indicator with configured layout.
+    public static var defaultIndicatorType: AIMActivityIndicatorType = .native()
+    
 }
