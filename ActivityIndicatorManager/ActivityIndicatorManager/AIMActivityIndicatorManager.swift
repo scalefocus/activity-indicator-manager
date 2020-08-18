@@ -21,17 +21,10 @@ open class AIMActivityIndicatorManager {
     /// - Parameter indicatorType: The loading indicator type - `custom` or `native`
     /// - Parameter minimumLoadingTimeType: The minimum loading time behaviour type - enabled/disabled with minimum loading time interval
     open class func setup(withWindow window: UIWindow? = nil,
-                          indicatorType: AIMActivityIndicatorManagerType,
+                          indicatorType: AIMActivityIndicatorType = AIMConstants.defaultIndicatorType,
                           minimumLoadingTimeType: AIMMinimumLoadingTimeType = .enabled(AIMConstants.minimumLoadingTime)) {
         sharedInstance.window = window
-        switch indicatorType {
-        case .native(let model):
-            sharedInstance.style = model.style
-            sharedInstance.color = model.color
-            sharedInstance.backgroundColor = model.backgroundColor
-        case .custom(let customView):
-            sharedInstance.customActivityIndicator = customView
-        }
+        sharedInstance.indicatorType = indicatorType
         sharedInstance.minimumLoadingTimeType = minimumLoadingTimeType
     }
     
@@ -45,33 +38,10 @@ open class AIMActivityIndicatorManager {
         }
     }
     
-    /// The basic appearance of the activity indicator.
-    open var style: UIActivityIndicatorView.Style {
-        set {
-            nativeActivityIndicator.style = newValue
-        }
-        get {
-            return nativeActivityIndicator.style
-        }
-    }
-    
-    /// The color of the activity indicator.
-    open var color: UIColor! {
-        set {
-            nativeActivityIndicator.color = newValue
-        }
-        get {
-            return nativeActivityIndicator.color
-        }
-    }
-    
-    /// The background color of the activity indicator.
-    open var backgroundColor: UIColor? {
-        set {
-            activityIndicator.backgroundColor = newValue
-        }
-        get {
-            return activityIndicator.backgroundColor
+    /// The loading indicator type.
+    open var indicatorType: AIMActivityIndicatorType = AIMConstants.defaultIndicatorType {
+        didSet {
+            setupIndicatorType(indicatorType)
         }
     }
     
@@ -143,6 +113,21 @@ open class AIMActivityIndicatorManager {
         return customActivityIndicator ?? nativeActivityIndicator
     }
     
+    /// Utility method updating the layout with the correct indicator type.
+    func setupIndicatorType(_ indicatorType: AIMActivityIndicatorType) {
+        switch indicatorType {
+        case .native(let model):
+            //update the native indicator layout
+            nativeActivityIndicator.style = model.style
+            nativeActivityIndicator.color = model.color
+            nativeActivityIndicator.backgroundColor = model.backgroundColor
+            //also clear custom indicator if set previously
+            customActivityIndicator = nil
+        case .custom(let customView):
+            customActivityIndicator = customView
+        }
+    }
+    
     /// Blocks the UI and starts activity indicator, if needed.
     func showIndicator() {
         //do nothing if the UI has already been blocked
@@ -181,9 +166,4 @@ open class AIMActivityIndicatorManager {
     public static let sharedInstance = AIMActivityIndicatorManager()
     private init() {}
     
-}
-
-// MARK: - AIMActivityIndicatorProtocol
-extension UIActivityIndicatorView: AIMActivityIndicatorProtocol {
-    //
 }

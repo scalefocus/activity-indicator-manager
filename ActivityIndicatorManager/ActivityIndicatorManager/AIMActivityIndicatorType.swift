@@ -1,5 +1,5 @@
 //
-//  AIMActivityIndicatorManagerType.swift
+//  AIMActivityIndicatorType.swift
 //  ActivityIndicatorManager
 //
 //  Created by Ivan Georgiev on 1.07.20.
@@ -9,7 +9,7 @@
 import Foundation
 
 /// Enum related to the type  of `AIMActivityIndicatorManager`.
-public enum AIMActivityIndicatorManagerType {
+public enum AIMActivityIndicatorType {
     
     /// Native loading indicator
     /// - Parameters:

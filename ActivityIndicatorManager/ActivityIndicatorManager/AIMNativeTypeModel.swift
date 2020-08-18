@@ -11,9 +11,9 @@ import UIKit
 /// Model that wraps all the functionalities and customisation of the Native Type of activity indicator
 public struct AIMNativeTypeModel {
     
-    var style: UIActivityIndicatorView.Style = AIMConstants.activityIndicatorStyle
-    var color: UIColor? = nil
-    var backgroundColor: UIColor? = AIMConstants.backgroundColor
+    public var style: UIActivityIndicatorView.Style
+    public var color: UIColor?
+    public var backgroundColor: UIColor?
     
     public init(style: UIActivityIndicatorView.Style = AIMConstants.activityIndicatorStyle,
                 color: UIColor? = nil,

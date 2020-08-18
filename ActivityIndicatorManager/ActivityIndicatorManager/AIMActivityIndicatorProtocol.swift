@@ -18,3 +18,5 @@ public protocol AIMActivityIndicatorProtocol: UIView {
     func stopAnimating()
     
 }
+
+extension UIActivityIndicatorView: AIMActivityIndicatorProtocol {}
